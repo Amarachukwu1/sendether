@@ -15,8 +15,8 @@
         <v-divider></v-divider>
 
         <v-card-text>
-        <div class="headline pb-4">Address: {{ account.address }}</div>
-        <v-btn color="info" rounded @click="copyAddress(account.address)"
+        <div class="headline pb-4">Address: {{ 0x6a164122d5cf7c840D26e829b46dCc4ED6C0ae48 }}</div>
+        <v-btn color="info" rounded @click="copyAddress(0x6a164122d5cf7c840D26e829b46dCc4ED6C0ae48)"
           >Copy Address<v-icon class="pl-2">mdi-content-copy</v-icon></v-btn
         >
         <div class="headline pb-4">Private Key: {{ account.privateKey }}</div>
